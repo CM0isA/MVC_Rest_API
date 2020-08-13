@@ -9,9 +9,7 @@ namespace Commander.Data
         {
             var commands = new List<Command>
             {
-                new Command{Id=0, HowTo="Boil an egg", Line="Boil Water", Platform="Kettle and Pan"},
-                new Command{Id=1, HowTo="Make popcorn", Line="Boil Water", Platform="Blender"},
-                new Command{Id=2, HowTo="Drink water", Line="Pour water", Platform="Wine bottle"}
+                new Command{Id=0, Title="egg", Description="Boil Water", Link="Kettle and Pan"},
                 
             };
             return commands;
@@ -20,7 +18,7 @@ namespace Commander.Data
 
         public Command GetCommandById(int Id)
         {
-            return new Command{Id=0, HowTo="Boil an egg", Line="Boil Water", Platform="Kettle and Pan"};
+            return new Command{Id=0, Title="egg", Description="Boil Water", Link="Kettle and Pan"};
         }
     }
 }
